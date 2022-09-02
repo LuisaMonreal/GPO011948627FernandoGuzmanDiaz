@@ -7,8 +7,8 @@ using namespace std;
 
 int main()
 {
-	//Use el float para que los precios o costos sean m�s especificos en las ventas como el caso de los que se ahorran 1 peso.
-	int opc, arti, a�o;
+	//Use el float para que los precios o costos sean más especificos en las ventas como el caso de los que se ahorran 1 peso.
+	int opc, arti, año; // omdifica el caracter d ñ a n
 	float precio, total;
 	string nom, clasif, caracter, descrip, genero;
 	cout << "\t Software Planet \n";
@@ -25,7 +25,7 @@ int main()
 		cin.ignore();
 		getline(cin, nom);
 		cout << "Introduce el ano del lanzamiento.\n";
-		cin >> a�o;
+		cin >> año;
 		cout << "Introduce su calificacion.\n(A/B/B15/C/D)\n";
 		cin.ignore();
 		getline(cin, clasif);
@@ -37,8 +37,8 @@ int main()
 		getline(cin, genero);
 		cout << "Introduce el precio unitario.\n";
 		cin >> precio;
-		total = precio * 1.16;
-		cout << "\nCodigo: " << arti << "\nNombre: " << nom << "\nAno: " << a�o << "\nCalificacion: " << clasif <<"\nCaracteristica: "<< caracter << "\nDescripcion: " << descrip << "\nGenero: " << genero << "\nPrecio Total: " << total << "\n";
+		total = precio * 1.16; // quiero que imprima el iva y el total separados
+		cout << "\nCodigo: " << arti << "\nNombre: " << nom << "\nAno: " << año << "\nCalificacion: " << clasif <<"\nCaracteristica: "<< caracter << "\nDescripcion: " << descrip << "\nGenero: " << genero << "\nPrecio Total: " << total << "\n";
 		system("pause");
 		return main();
 
@@ -50,7 +50,7 @@ int main()
 		cout << "Fuera de servicio.\n";
 		break;
 
-	case 4://Lista de Articulos, nos muestra los articulos colocados o introducidos por el due�o de la pagina.
+	case 4://Lista de Articulos, nos muestra los articulos colocados o introducidos por el dueño de la pagina.
 		cout << "Fuera de servicio.\n";
 		break;
 
